@@ -1,5 +1,11 @@
 #!/bin/bash
 
+cd ../Rythm
+
+mvn -DaltDeploymentRepository=releases::default::file:../rythm-pages/maven -DperformRelease=true clean deploy
+
+cd ../rythm-pages
+
 for DIR in $(find maven -type d); do
   (
     echo -e "<html>\n<body>\n<h1>Directory listing</h1>\n<hr/>\n<pre>"
