@@ -8,8 +8,8 @@
 
     <groupId>com.rythmengine</groupId>
     <artifactId>rythm</artifactId>
+    <version>1.0.0-20120704a-hikoz</version>
     <packaging>jar</packaging>
-    <version>1.0.0-20120704a</version>
 
     <name>Rythm Template Engine</name>
     <description>Rythm Template Engine</description>
@@ -30,9 +30,8 @@
 
     <repositories>
         <repository>
-            <id>com.google.code.maven-play-plugin</id>
-            <name>Maven Play Plugin - releases</name>
-            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
+            <id>rythm</id>
+            <url>http://hikoz.github.com/Rythm/maven</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -47,15 +46,14 @@
     </properties>
 
     <dependencies>
-        <!-- TODO - maybe change to ecj (and deploy it) -->
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.eclipse.jdt</groupId>
-            <artifactId>org.eclipse.jdt.core</artifactId>
-            <version>3.8.0.v_C03</version>
+            <groupId>org.eclipse.jdt.core.compiler</groupId>
+            <artifactId>ecj</artifactId>
+            <version>3.7.2</version>
         </dependency>
 
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.com.javaregex.pat</groupId>
+            <groupId>com.javaregex</groupId>
             <artifactId>pat</artifactId>
             <version>1.5.3</version>
         </dependency>
